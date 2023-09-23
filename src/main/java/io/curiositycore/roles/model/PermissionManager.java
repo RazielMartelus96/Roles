@@ -36,7 +36,6 @@ public class PermissionManager {
                 .orElseThrow();
     }
 
-
     private Permission<?> findHighestPriorityPermission(Permission<?>[] permissionsToCheck) throws NullPointerException{
         int highestPriority = -1;
         Permission<?> highestPriorityPermission = null;
