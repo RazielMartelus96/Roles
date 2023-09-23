@@ -19,7 +19,7 @@ public class DiscordUser implements User<String> {
 
     @Override
     public String[] getPermissionIds() {
-        return new String[0];
+        return this.discordRoleIds;
     }
 
     private String[] initDiscordRoleIds(){
