@@ -4,8 +4,13 @@ import io.curiositycore.roles.model.permissions.Permission;
 import org.apache.commons.lang3.NotImplementedException;
 
 public class DiscordUser implements User<String> {
-    String discordId;
-    String[] discordRoleIds;
+    private String discordId;
+    private String[] discordRoleIds;
+
+    public DiscordUser(String discordId){
+        this.discordId = discordId;
+        this.discordRoleIds = initDiscordRoleIds();
+    }
     @Override
     public String getId() {
         return this.discordId;
