@@ -1,7 +1,7 @@
 package io.curiositycore.roles;
 
 import io.curiositycore.roles.listeners.UserListener;
-import io.curiositycore.roles.model.factories.PermssionFactory;
+import io.curiositycore.roles.model.factories.PermissionFactory;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Roles extends JavaPlugin {
@@ -19,9 +19,9 @@ public final class Roles extends JavaPlugin {
     }
 
     private void initPermissions(){
-        PermssionFactory permssionFactory = new PermssionFactory();
-        permssionFactory.setConfigSection(this.getConfig().getConfigurationSection("spigot-discord"));
-        permssionFactory.build();
+        PermissionFactory permissionFactory = new PermissionFactory();
+        permissionFactory.setConfigSection(this.getConfig().getConfigurationSection("spigot-discord"));
+        permissionFactory.build();
     }
 
     private void initialiseListeners(){
