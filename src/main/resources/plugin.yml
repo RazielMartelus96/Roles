@@ -1,0 +1,4 @@
+name: Roles
+version: '${project.version}'
+main: io.curiositycore.roles.Roles
+api-version: 1.20
